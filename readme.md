@@ -1,30 +1,6 @@
-# Учебный, демонстрационный проект для студентов geekbrains, курса highload.
-Студенты, привет! :)
-
-Пару слов о проекте.
-Этот проект нужен для демонстрации разницы в настройке и работе между nginx и apache2
-В дальнейшем мы будем развивать этот проект 
-
-## Требования
-Прежде чем приступить к запуску проекта, вам нужно будет установить Docker и Docker Compose. Ссылки для скачки ниже. 
-
-Docker https://docs.docker.com/engine/install/
-
-Docker Compose https://docs.docker.com/compose/install/
+# Учебный, демонстрационный проект курса highload.
 
 ## Сборка проекта 
-Вне зависимости от выбранного вебсервера алгоритм запуска одинаковый:
-1. Собрать проект
-2. Запустить проект
-### nginx
-Сборка
-```
-docker-compose -f nginx.docker-compose.yml build
-```
-Запуск 
-```
-docker-compose -f nginx.docker-compose.yml up -d --force
-```
 
 ### apache2
 Сборка
@@ -33,10 +9,8 @@ docker-compose -f apache2.docker-compose.yml build
 ```
 Запуск
 ```
-docker-compose -f apache2.docker-compose.yml up -d --force
+docker-compose -f apache2.docker-compose.yml up
 ```
-О том, как все это работает, я расскажу на уроке
-
 
 ### Зайти в терминал контейнера
 ``` 
