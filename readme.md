@@ -1,3 +1,4 @@
+
 # Учебный, демонстрационный проект курса highload.
 
 ## Сборка проекта 
@@ -9,6 +10,7 @@ docker-compose -f apache2.docker-compose.yml build
 ```
 Запуск
 ```
+
 docker-compose -f apache2.docker-compose.yml up
 ```
 
@@ -21,4 +23,3 @@ docker exec -it {container_name} bash
 Таким образом, готовая команда будет вглядит так:
 ``` 
 docker exec -it apache2 bash
-```
