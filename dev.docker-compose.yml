@@ -44,3 +44,23 @@ services:
             - "6379:6379"
     memcached:
         image: 'bitnami/memcached:latest'
+
+    rabbitmq:
+        image: rabbitmq:3.9.11-management
+        container_name: rabbitmq
+        ports:
+            - 5672:5672
+            - 15672:15672
+        volumes:
+            - rabbitmq:/var/lib/rabbitmq
+            - rabbitmq-logs:/var/log/rabbitmq
+        networks:
+            - network
+
+networks:
+    network:
+        driver: bridge
+
+volumes:
+    rabbitmq-logs:
+    rabbitmq:
